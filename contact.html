@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - DeutschHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="brand">DeutschHub</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="form-section container">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <p class="section-subtext">Isi formulir di bawah untuk mendaftar kelas atau menghubungi tim DeutschHub. Kami akan segera merespon pesan Anda.</p>
+
+    <form onsubmit="return submitForm(event)">
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+      </div>
+
+      <div class="form-group">
+        <label for="interest">Minat Belajar</label>
+        <input type="text" id="interest" name="interest" placeholder="Contoh: Level A1, grammar, speaking" required>
+      </div>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DeutschHub. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>
